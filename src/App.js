@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          SUPER HOT FIRE
         </a>
       </header>
     </div>
