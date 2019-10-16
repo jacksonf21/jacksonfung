@@ -1,0 +1,19 @@
+.body-head {
+  height: 100%;
+  padding: 0 0 0 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-head h3 {
+  margin: 0;
+  font-weight: 100;
+}
+
+.main-container {
+  min-height: 70vh;
+  max-height: 100vh;
+  border: 3px solid;
+}
+
+/*# sourceMappingURL=Main.css.map */

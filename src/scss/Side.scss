@@ -1,0 +1,29 @@
+.body-side {
+  height: 100%;
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+  padding: 0 3vw 0 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    margin: 0;
+  }
+
+  .side-container {
+    position: relative;
+    min-width: 30vw;
+    min-height: 50vh;
+    border: 3px solid;
+  } 
+
+  .side-footer {
+    border: 1px solid;
+    position: absolute;
+    min-height: 8vh;
+    width: 100%;
+    bottom: 0;
+  }
+}
+
