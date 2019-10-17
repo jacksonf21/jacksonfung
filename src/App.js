@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     dispatch({ type: SET_DEFAULT });
-  });
+  },[]);
 
   const addSelect = () => {
     const newSelect = select + 1;
@@ -51,6 +51,8 @@ function App() {
       <Side 
         content={select}
         onClick={selectContent}
+        addSelect={addSelect}
+        subtractSelect={subtractSelect}
       />
     </main>
   );

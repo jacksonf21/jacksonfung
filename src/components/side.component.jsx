@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./button.component";
 import '../styles/Side.css';
 
-export default function Side({ content, onClick }) {
+export default function Side({ content, onClick, addSelect, subtractSelect }) {
   return (
     <article className='body-side'>
       <div className='side-container'>
