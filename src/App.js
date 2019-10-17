@@ -13,7 +13,8 @@ import reducer, {
 function App() {
   const [state, dispatch] = useReducer(reducer, {
     title: null,
-    description: null
+    description: null,
+    sideName: ''
   });
 
   const [select, setSelect] = useState(0);
@@ -22,25 +23,30 @@ function App() {
     dispatch({ type: SET_DEFAULT });
   },[]);
 
+  useEffect(() => {
+    const selectContent = () => {
+      if (select === 0) {
+        dispatch({ type: SET_DEFAULT });
+      } else if (select === 1) {
+        dispatch({type: SET_SKILLS});
+      } else if (select === 2) {
+        dispatch({ type: SET_PROJECTS });
+      } else if (select === 3) {
+        dispatch({ type: SET_ABOUT_ME });
+      }
+    };
+    selectContent();
+  },[select])
+
   const addSelect = () => {
-    const newSelect = select + 1;
-    setSelect(newSelect, selectContent())
+    if (select === 3) return;
+    setSelect(select => select + 1)
   }
 
   const subtractSelect = () => {
-    const newSelect = select - 1;
-    setSelect(newSelect, selectContent())
+    if (select === 0) return;
+    setSelect(select => select - 1)
   }
-
-  const selectContent = () => {
-    if (select === 1) {
-      dispatch({ type: SET_SKILLS });
-    } else if (select === 2) {
-      dispatch({ type: SET_PROJECTS });
-    } else if (select === 3) {
-      dispatch({ type: SET_ABOUT_ME })
-    }
-  };
 
   return (
     <main className='app-container'>
@@ -49,8 +55,8 @@ function App() {
         description={state.description}
       />
       <Side 
+        sideName={state.sideName}
         content={select}
-        onClick={selectContent}
         addSelect={addSelect}
         subtractSelect={subtractSelect}
       />

@@ -22,6 +22,13 @@
   min-height: 8vh;
   width: 100%;
   bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.MuiSvgIcon-root {
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
 /*# sourceMappingURL=Side.css.map */

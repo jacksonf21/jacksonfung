@@ -1,18 +1,24 @@
 import React from "react";
-import Button from "./button.component";
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import '../styles/Side.css';
+import SkillList from "./skill-list.component";
 
-export default function Side({ content, onClick, addSelect, subtractSelect }) {
+export default function Side({ content, addSelect, subtractSelect, sideName }) {
   return (
     <article className='body-side'>
       <div className='side-container'>
-        <h3>This is me</h3>
         {content}
+        {content === 1 && (
+          <SkillList />
+        )}
         <footer className='side-footer'>
-          This is a footer
-          <Button
-            onClick={onClick}
-            text={'Skills'}
+          <ArrowBackIosIcon
+            onClick={() => subtractSelect()}
+          />
+            {sideName}
+          <ArrowForwardIosIcon
+            onClick={() => addSelect()}
           />
         </footer>
       </div>
