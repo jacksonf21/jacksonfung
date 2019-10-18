@@ -8,7 +8,6 @@ export default function Side({ content, addSelect, subtractSelect, sideName }) {
   return (
     <article className='body-side'>
       <div className='side-container'>
-        {content}
         {content === 1 && (
           <SkillList />
         )}

@@ -1,0 +1,20 @@
+.nav-header {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+.nav-header .icon-container {
+  width: 15vw;
+  margin-top: 3vh;
+  margin-right: 3vw;
+}
+.nav-header .icon-container .MuiSvgIcon-root {
+  height: 3.5vh;
+  margin-right: 1vw;
+  width: 3.5vw;
+}
+
+/*# sourceMappingURL=Header.css.map */

@@ -12,4 +12,4 @@ export const DESC_PROJECTS = 'projects'
 export const DESC_ABOUT_ME = 'about me'
 
 //LANGUAGES
-export const LANGUAGES = ['JavaScript', 'Python', 'React'];
+export const LANGUAGES = ['JavaScript', 'Python', 'React', 'Node'];

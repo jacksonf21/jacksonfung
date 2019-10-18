@@ -1,6 +1,7 @@
 import React from "react";
 import { LANGUAGES } from "../content/content";
 import Skill from "./skill.component";
+import '../styles/SkillList.css';
 
 export default function SkillList() {
   

@@ -14,21 +14,20 @@
   position: relative;
   min-width: 30vw;
   min-height: 50vh;
-  border: 3px solid;
 }
 .body-side .side-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border: 1px solid;
   position: absolute;
   min-height: 8vh;
   width: 100%;
   bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-
-.MuiSvgIcon-root {
+.body-side .side-footer .MuiSvgIcon-root {
   margin-left: 3vw;
   margin-right: 3vw;
 }
+
 /*# sourceMappingURL=Side.css.map */

@@ -1,3 +1,31 @@
+.Python img {
+  height: 8vw;
+  width: 8vw;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
 
+.Python img:hover {
+  transform: scale(1.15);
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+.JavaScript img {
+  height: 8vw;
+  width: 8vw;
+}
+
+.React img {
+  height: 8vw;
+  width: 8vw;
+}
+
+.Node img {
+  height: 8vw;
+  width: 8vw;
+}
 
 /*# sourceMappingURL=Skill.css.map */

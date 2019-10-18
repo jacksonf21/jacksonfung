@@ -9,6 +9,7 @@ import reducer, {
   SET_PROJECTS,
   SET_ABOUT_ME
 } from './helper/reducer'
+import Header from './components/header.component';
 
 function App() {
   const [state, dispatch] = useReducer(reducer, {
@@ -49,6 +50,8 @@ function App() {
   }
 
   return (
+    <>
+    <Header />
     <main className='app-container'>
       <Main 
         title={state.title}
@@ -61,6 +64,7 @@ function App() {
         subtractSelect={subtractSelect}
       />
     </main>
+    </>
   );
 }
 

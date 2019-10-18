@@ -1,0 +1,14 @@
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-container > * {
+  display: flex;
+  flex: 1 0 33%;
+  justify-content: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+/*# sourceMappingURL=SkillList.css.map */
