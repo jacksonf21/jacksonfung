@@ -10,6 +10,7 @@ export default function Header() {
       <div className='icon-container'>
         <GitHubIcon/>
         <MailOutlineIcon/>
+        {/* <img src={require(`../icons/contact.png`)} alt='' /> */}
         <DescriptionOutlinedIcon/>
       </div>
     </nav>

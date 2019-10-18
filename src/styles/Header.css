@@ -15,6 +15,12 @@
   height: 3.5vh;
   margin-right: 1vw;
   width: 3.5vw;
+  cursor: pointer;
+}
+.nav-header .icon-container img {
+  height: 4vh;
+  margin-right: 1vw;
+  width: 4vw;
 }
 
 /*# sourceMappingURL=Header.css.map */

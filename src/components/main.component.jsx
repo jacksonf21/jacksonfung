@@ -3,6 +3,7 @@ import '../styles/Main.css';
 
 export default function Main({ title, description }) {
   return (
+    <>
     <article className='body-head'>
       <div className='main-container'>
         <header className='article-title'>
@@ -13,5 +14,11 @@ export default function Main({ title, description }) {
         </section>
       </div>
     </article>
+    <footer className='body-head-footer'>
+      <div className='block'></div>
+      <div className='blocktwo'></div>
+      <div className='blockthree'></div>
+    </footer>
+    </>
   )
 }

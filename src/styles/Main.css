@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-row: 1/span 1;
+  grid-column: 1/span 1;
 }
 .body-head h3 {
   margin: 0;
@@ -13,6 +15,37 @@
 .main-container {
   min-height: 70vh;
   max-height: 100vh;
+}
+
+.block {
+  background-color: #f08d64;
+  min-width: 8vw;
+  min-height: 8vw;
+  border-radius: 50%;
+}
+
+.blocktwo {
+  background-color: #7869fe;
+  min-width: 8vw;
+  min-height: 8vw;
+  border-radius: 50%;
+}
+
+.blockthree {
+  background-color: #fbcc40;
+  min-width: 8vw;
+  min-height: 8vw;
+  border-radius: 50%;
+}
+
+.body-head-footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  margin-left: 5vw;
+  margin-bottom: 8vh;
+  grid-row: 1/span 1;
+  grid-column: 1/span 1;
 }
 
 /*# sourceMappingURL=Main.css.map */

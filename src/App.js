@@ -50,9 +50,8 @@ function App() {
   }
 
   return (
-    <>
-    <Header />
     <main className='app-container'>
+      <Header />
       <Main 
         title={state.title}
         description={state.description}
@@ -64,7 +63,6 @@ function App() {
         subtractSelect={subtractSelect}
       />
     </main>
-    </>
   );
 }
 

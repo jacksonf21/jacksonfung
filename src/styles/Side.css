@@ -28,6 +28,7 @@
 .body-side .side-footer .MuiSvgIcon-root {
   margin-left: 3vw;
   margin-right: 3vw;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=Side.css.map */
