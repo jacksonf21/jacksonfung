@@ -22,6 +22,8 @@
   min-width: 8vw;
   min-height: 8vw;
   border-radius: 50%;
+  -webkit-animation: bounce 1.5s infinite alternate;
+  animation: bounce 1.5s infinite alternate;
 }
 
 .blocktwo {
@@ -29,6 +31,8 @@
   min-width: 8vw;
   min-height: 8vw;
   border-radius: 50%;
+  -webkit-animation: bounce 1.25s infinite alternate;
+  animation: bounce 1.5s infinite alternate;
 }
 
 .blockthree {
@@ -36,6 +40,8 @@
   min-width: 8vw;
   min-height: 8vw;
   border-radius: 50%;
+  -webkit-animation: bounce 1s infinite alternate;
+  animation: bounce 1.5s infinite alternate;
 }
 
 .body-head-footer {
@@ -46,6 +52,23 @@
   margin-bottom: 8vh;
   grid-row: 1/span 1;
   grid-column: 1/span 1;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
 }
 
 /*# sourceMappingURL=Main.css.map */

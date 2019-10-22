@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .body-side h3 {
   margin: 0;
@@ -14,20 +15,21 @@
   position: relative;
   min-width: 30vw;
   min-height: 50vh;
+  border: 1px solid;
 }
 .body-side .side-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid;
-  position: absolute;
   min-height: 8vh;
   width: 100%;
-  bottom: 0;
+  font-weight: 100;
+  font-size: 4vh;
 }
 .body-side .side-footer .MuiSvgIcon-root {
   margin-left: 3vw;
   margin-right: 3vw;
+  font-size: 3vh;
   cursor: pointer;
 }
 

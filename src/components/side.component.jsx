@@ -11,16 +11,16 @@ export default function Side({ content, addSelect, subtractSelect, sideName }) {
         {content === 1 && (
           <SkillList />
         )}
-        <footer className='side-footer'>
-          <ArrowBackIosIcon
-            onClick={() => subtractSelect()}
-          />
-            {sideName}
-          <ArrowForwardIosIcon
-            onClick={() => addSelect()}
-          />
-        </footer>
       </div>
+      <footer className='side-footer'>
+        <ArrowBackIosIcon
+          onClick={() => subtractSelect()}
+        />
+          {sideName}
+        <ArrowForwardIosIcon
+          onClick={() => addSelect()}
+        />
+      </footer>
     </article>
   )
 }
